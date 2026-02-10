@@ -1,0 +1,13 @@
+<h2>Analysis Results</h2>
+<table border="1">
+    <tr><th>Topic</th><th>Match %</th><th>Status</th></tr>
+    {% for topic, val in analysis.items() %}
+    <tr>
+        <td>{{ topic }}</td>
+        <td>{{ val[0] }}%</td>
+        <td>{{ val[1] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<br>
+<a href="/dashboard">Back to Dashboard</a>
